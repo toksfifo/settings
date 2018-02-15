@@ -9,7 +9,8 @@ PS1="\u:\w$ "
 source ~/Documents/apps/appboy-localdev/.profile
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 #
 [ -f ~/.git-flow-completion.sh ] && . ~/.git-flow-completion.sh
 launchctl setenv PATH /opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/toksfifo/bin:/Users/toksfifo/.rvm/bin
@@ -23,6 +24,7 @@ alias ls="command ls ${colorflag}"
 alias l="ls -lF ${colorflag}" # all files, in long format
 alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
 alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
+
 ### Prompt Colors
 # Modified version of @gf3’s Bash Prompt
 # (https://github.com/gf3/dotfiles)
@@ -68,6 +70,7 @@ export PURPLE
 export WHITE
 export BOLD
 export RESET
+
 # Git branch details
 function parse_git_dirty() {
         [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
@@ -75,11 +78,19 @@ function parse_git_dirty() {
 function parse_git_branch() {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
+
 # Change this symbol to something sweet.
 # (http://en.wikipedia.org/wiki/Unicode_symbols)
 symbol="♦"
 export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n$symbol\[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
+
 # Case Insensitive Bash Tab Completion
 bind "set completion-ignore-case on"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+#git autocomplete
+# git autocompletion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi

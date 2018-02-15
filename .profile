@@ -120,6 +120,9 @@ ssh-eu() {
   ssh -t toks@dashboard-002.production-euc-1.appboy.eu "/bin/bash --login -c 'sudo -iH -u platform /opt/platform/bin/platform-dashboard-console'"
 }
 
+rspec() {
+  bundle exec rspec $1
+}
 
 dashboard() {
   platform-dashboard
@@ -128,3 +131,6 @@ dashboard() {
 console() {
   platform-dashboard-console
 }
+
+# From old .bash_profile. Seems to make `bundle` work.
+export DOCKER=true; eval "$(rbenv init -)"

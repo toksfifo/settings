@@ -1,7 +1,7 @@
 # profiles
 
 ## Usage
-* Clone repository.
+* Clone repository into `~/Documents/apps/`
 * Set `.profile` to be `source ~/Documents/apps/profiles/.profile`
 * Set `.bashrc` to be `source ~/Documents/apps/profiles/.bashrc`
 * Set `.bash_profile` to be `source ~/Documents/apps/profiles/.bash_profile`

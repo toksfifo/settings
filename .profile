@@ -10,7 +10,7 @@ source ~/Documents/apps/appboy-localdev/.profile
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 #
 [ -f ~/.git-flow-completion.sh ] && . ~/.git-flow-completion.sh
 launchctl setenv PATH /opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/toksfifo/bin:/Users/toksfifo/.rvm/bin
@@ -120,6 +120,10 @@ ssh-eu() {
   ssh -t toks@dashboard-002.production-euc-1.appboy.eu "/bin/bash --login -c 'sudo -iH -u platform /opt/platform/bin/platform-dashboard-console'"
 }
 
+ssh-nfi() {
+  ssh -t toks@env-006.staging-east-1.appboy.com
+}
+
 rspec() {
   bundle exec rspec $1
 }
@@ -132,5 +136,24 @@ console() {
   platform-dashboard-console
 }
 
+cd-dashboard() {
+  cd ~/Documents/apps/appboy-localdev/shared/platform/dashboard/
+}
+
+rspec-nfi-dashboard() {
+  bundle exec rspec /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/spec/controllers/controller_actions/apps/analytics_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/spec/lib/jobs/appboy/communication/marketing/content_cards_dispatcher_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/spec/models/appboy/communication/marketing/content_cards_action_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/spec/models/appboy/communication/marketing/content_cards_message_variation_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/analytics/buffers/content_cards_daily_stat_buffer_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/analytics/campaign_analytics_provider_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/analytics/campaign_daily_stat_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/analytics/daily_stat_analytics_provider_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/analytics/message_send_analytics_provider_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/analytics/message_send_instance_daily_stat_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/analytics/payload_tracking_info_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/content_cards/card_factory_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/content_cards/card_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/content_cards/content_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/content_cards/provider_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/hash_generator_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/postgres/format_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/util/coerce_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/jobs/appboy/communication/marketing/message_partial_enqueuer_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/models/app_group_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/models/appboy/analytics/content_cards_daily_stat_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/models/appboy/analytics/push_daily_stat_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/models/appboy/communication/segment/campaign_retarget_filter_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/models/appboy/communication/segment/mongo_filter_assessor_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/models/appboy/communication/segment/workflow_step_retarget_filter_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/models/tracked_user_behavior/interacted_with_campaign_spec.rb
+}
+
+rspec-nfi-api() {
+  bundle exec rspec /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/spec/integration/appboy/api/v3/content_cards_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/spec/lib/appboy/api/v3/content_cards/sdk_payload_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/spec/lib/appboy/api/service_loader_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/spec/lib/appboy/api/v3/content_cards/request_parser_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/spec/lib/appboy/api/v3/content_cards/request_validator_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/spec/lib/appboy/api/v3/content_cards/sync_manager_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/api/v2/content_cards_interaction_event_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/api/v2/internal_event_logger_spec.rb /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/spec/shared/lib/appboy/api/v2/sdk_event_processor_spec.rb
+}
+
+nfi-copy-file() {
+  git checkout nfi /Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/$1
+}
+
 # From old .bash_profile. Seems to make `bundle` work.
 export DOCKER=true; eval "$(rbenv init -)"
+
+# Fuzzy
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -1,0 +1,96 @@
+// Work
+{
+  "binary_file_patterns":
+  [
+    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/coverage/*",
+    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/coverage/*",
+    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/coverage/*",
+    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/tmp/*"
+  ],
+  "caret_extra_bottom": 2,
+  "caret_extra_top": 2,
+  "caret_extra_width": 2,
+  "caret_style": "phase",
+  "close_windows_when_empty": false,
+  "color_scheme": "Packages/Predawn/predawn.tmTheme",
+  "draw_minimap_border": true,
+  "enable_tab_scrolling": true,
+  "ensure_newline_at_eof_on_save": true,
+  "fade_fold_buttons": false,
+  "findreplace_small": true,
+  "font_face": "Menlo",
+  "font_options":
+  [
+    "gray_antialias"
+  ],
+  "font_size": 10,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "line_padding_bottom": 2,
+  "line_padding_top": 2,
+  "open_files_in_new_window": false,
+  "overlay_scroll_bars": "enabled",
+  "predawn_sidebar_xsmall": true,
+  "predawn_tabs_active_underline": true,
+  "predawn_tabs_small": true,
+  "preview_on_click": true,
+  "rulers":
+  [
+    119
+  ],
+  "scroll_past_end": true,
+  "scroll_past_top": true,
+  "scroll_speed": 1.0,
+  "show_full_path": true,
+  "tab_size": 2,
+  "theme": "predawn-DEV.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": true
+}
+
+// Home
+{
+  "caret_style": "phase",
+  "close_windows_when_empty": false,
+  "color_scheme": "Packages/Predawn/predawn.tmTheme",
+  "draw_minimap_border": true,
+  "enable_tab_scrolling": false,
+  "ensure_newline_at_eof_on_save": true,
+  "fade_fold_buttons": false,
+  "findreplace_small": true,
+  "font_options":
+  [
+    "gray_antialias"
+  ],
+  "font_size": 10,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Package Control",
+    "Vintage"
+  ],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "open_files_in_new_window": false,
+  "overlay_scroll_bars": "enabled",
+  "predawn_sidebar_xsmall": true,
+  "predawn_tabs_active_underline": true,
+  "predawn_tabs_small": true,
+  "preview_on_click": true,
+  "rulers":
+  [
+    119
+  ],
+  "scroll_past_end": true,
+  "scroll_speed": 5.0,
+  "show_full_path": true,
+  "tab_size": 2,
+  "theme": "predawn-DEV.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": true
+}

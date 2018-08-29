@@ -11,15 +11,3 @@ export RBENV_VERSION=2.2.4
 # From old .bash_profile. Seems to make `bundle` work.
 export DOCKER=true
 eval "$(rbenv init -)"
-
-dashboard() {
-  platform-dashboard
-}
-
-console() {
-  platform-dashboard-console
-}
-
-cd-ald() {
-  cd ~/Documents/apps/appboy-localdev/shared/platform/dashboard/
-}

@@ -73,8 +73,11 @@ COLOR KEY
         <key>guide</key>
         <string>#F1826025</string>
 
+        <key>stackGuide</key>
+        <string>#F1826025</string>
+
         <key>activeGuide</key>
-        <string>#F1826050</string>
+        <string>#BF6C52</string>
 
         <key>minimapBorder</key>
         <string>#F1826025</string>

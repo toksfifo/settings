@@ -74,7 +74,6 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 # Case Insensitive Bash Tab Completion
 bind "set completion-ignore-case on"
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # git autocompletion
 if [ -f ~/.git-completion.bash ]; then

@@ -42,10 +42,10 @@
   ],
   "binary_file_patterns":
   [
-    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/coverage/*",
-    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/api/coverage/*",
-    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/shared_code/coverage/*",
-    "/Users/toksfifo/Documents/apps/appboy-localdev/shared/platform/dashboard/tmp/*"
+    "/Users/toksfifo/Documents/Projects/platform/dashboard/coverage/*",
+    "/Users/toksfifo/Documents/Projects/platform/api/coverage/*",
+    "/Users/toksfifo/Documents/Projects/platform/shared_code/coverage/*",
+    "/Users/toksfifo/Documents/Projects/platform/dashboard/tmp/*"
   ],
   "caret_extra_bottom": 2,
   "caret_extra_top": 2,

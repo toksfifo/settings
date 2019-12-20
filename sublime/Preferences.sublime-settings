@@ -38,7 +38,8 @@
     "Workflows",
     "workflows",
     "datalake",
-    "stringify"
+    "stringify",
+    "Memoize"
   ],
   "binary_file_patterns":
   [
@@ -88,7 +89,7 @@
   "preview_on_click": true,
   "rulers":
   [
-    119
+    120
   ],
   "scroll_past_end": true,
   "scroll_speed": 1.0,
@@ -100,5 +101,5 @@
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
   "word_wrap": true,
-  "wrap_width": 120
+  "wrap_width": 121
 }
